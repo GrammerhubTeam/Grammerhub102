@@ -2,11 +2,24 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+const list = [
+  "dog",
+  "cat",
+  "shark"
+]
+
+const App = () => {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <ul>
+          {list.map((listItem) => {
+            return (
+              <li>{listItem}</li>
+            )
+          })}
+        </ul>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>

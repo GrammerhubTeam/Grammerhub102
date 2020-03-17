@@ -1,38 +1,69 @@
 import React from 'react';
-import logo from './logo.svg';
+
+import Template from './Template'
+import Home from './Home'
+import Mac from './Mac'
+import IPad from './IPad'
+import IPhone from './IPhone'
+import Watch from './Watch'
+import TV from './TV'
+import Music from './Music'
+import Support from './Support'
+
+
+// import logo from './logo.svg';
 import './App.css';
 
-const list = [
-  "dog",
-  "cat",
-  "shark"
-]
+// const list = [
+//   "shark",
+//   "nado",
+//   "boom!"
+// ]
+
+const VIEWS = {
+  HOME: 'HOME',
+  MAC: 'MAC',
+  IPAD: 'IPAD',
+  IPHONE: 'IPHONE',
+  WATCH: 'WATCH',
+  TV: 'TV',
+  MUSIC: 'MUSIC', 
+  SUPPORT: 'SUPPORT',
+}
 
 const App = () => {
+  const [selectedView, setSelectedView] = React.useState(VIEWS.HOME)
+  const renderView = () => {
+    switch (selectedView) {
+      case VIEWS.HOME:
+        return <Home />
+      case VIEWS.MAC:
+        return <Mac />
+      case VIEWS.IPAD:
+        return <IPad />
+      case VIEWS.IPHONE:
+        return <IPhone />
+      case VIEWS.WATCH:
+        return <Watch />
+      case VIEWS.TV:
+        return <TV />
+      case VIEWS.MUSIC:
+        return <Music />
+      case VIEWS.SUPPORT:
+        return <Support />
+      default:
+        return <Home />
+    }
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <ul>
-          {list.map((listItem) => {
-            return (
-              <li>{listItem}</li>
-            )
-          })}
-        </ul>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <div className="App">
+        <Template views={VIEWS} setView={setSelectedView}>
+        {renderView()}
+        </Template>
+      </div>
+    </React.Fragment>
   );
 }
 

@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from '../../static/logo.svg';
+import '../../Containers/App.css';
 
 const list = [
   "shark",

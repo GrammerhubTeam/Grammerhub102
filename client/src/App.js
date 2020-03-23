@@ -10,15 +10,7 @@ import TV from './TV'
 import Music from './Music'
 import Support from './Support'
 
-
-// import logo from './logo.svg';
 import './App.css';
-
-// const list = [
-//   "shark",
-//   "nado",
-//   "boom!"
-// ]
 
 const VIEWS = {
   HOME: 'HOME',

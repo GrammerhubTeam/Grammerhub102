@@ -120,7 +120,8 @@
 }
 
 #global-footer .column-section {
-   pointer-events: none
+   pointer-events: none;
+   text-align: left;
 }
 
 @media only screen and (max-width: 767px) {

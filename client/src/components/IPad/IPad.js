@@ -1,11 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// import logo from '../../static/logo.svg';
+import '../../Containers/App.css';
+import './IPad.css'
+import RowLogical from './RowLogical'
 
-const list = [
-  "shark",
-  "nado",
-  "boom!"
+{/* <div class="row row-logical">
+  <div class="recap-feature column large-6 small-12 feature-retina-display">
+    <figure class="recap-feature-icon image-overview-recap-retina-display" data-anim-lazy-image></figure>
+    <h3 class="recap-feature-headline typography-overview-recap-subheadline">10.2-inch Retina display</h3>
+    <p class="recap-feature-copy large-10 small-12 typography-overview-recap-body">With incredible detail and vivid colors, the new, larger Retina display is perfect for watching a movie, working on a project, and drawing your next masterpiece.</p>
+  </div>
+  <div class="recap-feature column large-6 small-12 feature-ipados">
+    <figure class="recap-feature-icon image-overview-recap-ipados" data-anim-lazy-image></figure>
+    <h3 class="recap-feature-headline typography-overview-recap-subheadline">iPadOS</h3>
+    <p class="recap-feature-copy large-10 small-12 typography-overview-recap-body">With features specifically designed for iPad, iPadOS includes intuitive multitasking, a new Home screen, and desktop-class browsing to make using iPad more powerful, fun, and productive.</p>
+  </div>
+</div> */}
+
+// example of what will come from an api
+const data = [
+  {
+    title: "10.2-inch Retina display",
+    description: "With incredible detail and vivid colors, the new, larger Retina display is perfect for watching a movie, working on a project, and drawing your next masterpiece.",
+    secondTitle: "iPadOS",
+    secondDescription: "With features specifically designed for iPad, iPadOS includes intuitive multitasking, a new Home screen, and desktop-class browsing to make using iPad more powerful, fun, and productive."
+  },
+  {
+    title: "Grammerhub",
+    description: "Just attach the  grammerrrr",
+    secondTitle: "Apple Pen",
+    secondDescription: "Apple Pencil features the precision, responsiveness, and natural fluidity of a traditional writing instrument and the versatility to become so much more.1 With it, you can turn iPad into your notepad, canvas, or just about anything else you can imagine."
+  }
 ]
 
 const App = () => {
@@ -119,18 +144,15 @@ const App = () => {
               <figure class="recap-hero image-overview-recap-hero " data-anim-lazy-image>
               </figure>
               <div class="recap-features">
-                <div class="row row-logical">
-                  <div class="recap-feature column large-6 small-12 feature-retina-display">
-                    <figure class="recap-feature-icon image-overview-recap-retina-display" data-anim-lazy-image></figure>
-                    <h3 class="recap-feature-headline typography-overview-recap-subheadline">10.2-inch Retina display</h3>
-                    <p class="recap-feature-copy large-10 small-12 typography-overview-recap-body">With incredible detail and vivid colors, the new, larger Retina display is perfect for watching a movie, working on a project, and drawing your next masterpiece.</p>
-                  </div>
-                  <div class="recap-feature column large-6 small-12 feature-ipados">
-                    <figure class="recap-feature-icon image-overview-recap-ipados" data-anim-lazy-image></figure>
-                    <h3 class="recap-feature-headline typography-overview-recap-subheadline">iPadOS</h3>
-                    <p class="recap-feature-copy large-10 small-12 typography-overview-recap-body">With features specifically designed for iPad, iPadOS includes intuitive multitasking, a new Home screen, and desktop-class browsing to make using iPad more powerful, fun, and productive.</p>
-                  </div>
-                </div>
+                {/* {=================================================} */}
+                {
+                  // map takes a function and passes in 2 values: each value in array, and index
+                  data.map((item, index) => (
+                    // item and number will be in props in RowLogical component
+                    <RowLogical key={index} item={item} number={5} />
+                  ))
+                }
+                {/* {=================================================} */}
                 <div class="row row-logical">
                   <div class="recap-feature column large-6 small-12 feature-smart-keyboard">
                     <figure class="recap-feature-icon image-overview-recap-smart-keyboard" data-anim-lazy-image></figure>
@@ -143,6 +165,7 @@ const App = () => {
                     <p class="recap-feature-copy large-10 small-12 typography-overview-recap-body">Apple Pencil features the precision, responsiveness, and natural fluidity of a traditional writing instrument and the versatility to become so much more.<sup><a href="#footnote-2" class="footnote">1</a></sup> With it, you can turn iPad into your notepad, canvas, or just about anything else you can imagine.</p>
                   </div>
                 </div>
+                 {/* {=================================================} */}
                 <div class="row row-logical">
                   <div class="recap-feature column large-6 small-12 feature-augmented-reality">
                     <figure class="recap-feature-icon image-overview-recap-augmented-reality" data-anim-lazy-image></figure>
@@ -155,6 +178,7 @@ const App = () => {
                     <p class="recap-feature-copy large-10 small-12 typography-overview-recap-body">With the A10 Fusion chip, you can edit a 4K video, play graphics-intensive games, and experience AR apps.</p>
                   </div>
                 </div>
+                 {/* {=================================================} */}
                 <div class="row row-logical">
                   <div class="recap-feature column large-6 small-12 feature-battery-life">
                     <figure class="recap-feature-icon image-overview-recap-battery-life" data-anim-lazy-image></figure>
@@ -167,6 +191,7 @@ const App = () => {
                     <p class="recap-feature-copy large-10 small-12 typography-overview-recap-body">There are more than a million iPad apps designed for anything you want to do, like learning, gaming, working, creating, and watching.</p>
                   </div>
                 </div>
+                 {/* {=================================================} */}
                 <div class="row row-logical">
                   <div class="recap-feature column large-6 small-12 feature-cameras">
                     <figure class="recap-feature-icon image-overview-recap-cameras" data-anim-lazy-image></figure>
@@ -179,6 +204,7 @@ const App = () => {
                     <p class="recap-feature-copy large-10 small-12 typography-overview-recap-body">iPad is built to be durable so you have peace of mind knowing you can take it anywhere you go. And now the enclosure is made from 100 percent recycled aluminum.</p>
                   </div>
                 </div>
+                 {/* {=================================================} */}
               </div>
             </div>
           </div>

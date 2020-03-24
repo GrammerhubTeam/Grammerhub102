@@ -28,6 +28,11 @@
     color: #61dafb;
 }
 
+.inverted {
+    background-color: black !important;
+    color: white !important;
+}
+
 @keyframes App-logo-spin {
 from {
     transform: rotate(0deg);

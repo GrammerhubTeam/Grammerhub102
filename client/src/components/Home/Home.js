@@ -1,31 +1,32 @@
-import React from 'react';
-import logo from '../../static/logo.svg';
+import React, { Component } from 'react';
+
 import '../../Containers/App.css';
+import './Home.css';
 
-const list = [
-  "shark",
-  "nado",
-  "boom!"
-]
+import TileCameras from './TileCameras';
+import TileChip from './TileChip';
+import TileCursor from './TileCursor';
+import TileDisplay from './TileDisplay';
+import TileLidar from './TileLidar';
+import TilePencil from './TilePencil';
 
-const App = () => {
-  return (
-    <React.Fragment>
-      <div className="App">
-        <div>
-            <p>HOME ROUTE</p>
-            <img src={logo} alt="logo" />
-            <p>I USED TO BE ABLE TO EAT PIZAA ALOT :(</p>
-            <p>
-            Edit <code>src/App.js</code> and save to reload.
-            </p>
+class Home extends Component {
+  render() {
+    return (
+      <main class="main">
+        <div class="module-content">
+          <div class="features-grid">
+            <TileCameras />
+            <TileChip />
+            <TileCursor />
+            <TileDisplay />
+            <TileLidar />
+            <TilePencil />
+          </div>
         </div>
-      </div>
-      <div>
-        <p>hi</p>
-      </div>
-    </React.Fragment>
-  );
+      </main>
+    );
+  }
 }
 
-export default App;
+export default Home;

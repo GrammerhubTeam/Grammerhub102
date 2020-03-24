@@ -1,0 +1,33 @@
+.main .tile-display {
+   -ms-grid-column: 1;
+   grid-column: 1;
+
+   -ms-grid-row: 2;
+   -ms-grid-row-span: 2;
+   grid-row: 2 / span 2
+}
+
+.main .tile-display .tile-image {
+   width: 460px;
+   height: 650px;
+   background-repeat: no-repeat;
+   background-image: url("../img/retina_display__b87n2i4x87ma_large.jpg")
+}
+
+
+@media only screen and (max-width: 1068px) {
+   .main .tile-display {
+      -ms-grid-column: 1;
+      grid-column: 1;
+
+      -ms-grid-row: 3;
+      -ms-grid-row-span: 2;
+      grid-row: 3 / span 2
+   }
+}
+
+@media only screen and (max-width: 734px) {
+   .main .tile-display {
+      grid-row: auto / span 3
+   }
+}

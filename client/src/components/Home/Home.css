@@ -1,39 +1,65 @@
-.App {
-    text-align: center;
+.main .module-content {
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+.main .features-grid {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1416px;
+    padding: 10px;
+
+    display: grid;
+    display: -ms-grid;
+    grid-gap: 10px;
+
+    -ms-grid-columns: 1fr 1.035fr 1fr;
+    grid-template-columns: 1fr 1.035fr 1fr;
+    grid-auto-rows: 320px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
+
+@media screen and (max-width: 1440px) and (min-width: 1069px) {
+    .main .module-content {
+        height: auto
     }
 }
 
-.App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-}
-
-.App-link {
-    color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
+@media screen and (max-width: 767px) and (min-width: 735px) {
+    .main .module-content {
+        height: auto
     }
+}
 
-    to {
-        transform: rotate(360deg);
+@media screen and (max-width: 734px) and (min-width: 0px) {
+    .main .module-content {
+        height: 500px
+    }
+}
+
+@media only screen and (max-width: 1068px) and (max-width: 1068px) {
+    .main .features-grid {
+        margin-left: auto;
+        margin-right: auto;
+        width: 692px
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    .main .features-grid {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 160px;
+
+        width: auto;
+        max-width: 375px
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .main .features-grid {
+        padding: 10px 0
     }
 }

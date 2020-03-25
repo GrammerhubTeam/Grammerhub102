@@ -1,24 +1,16 @@
 import React from 'react';
 
-import Template from './Template'
-import Home from './Home'
-import Mac from './Mac'
-import IPad from './IPad'
-import IPhone from './IPhone'
-import Watch from './Watch'
-import TV from './TV'
-import Music from './Music'
-import Support from './Support'
+import Template from '../components/Template/Template'
+import Home from '../components/Home/Home'
+import Mac from '../components/Mac/Mac'
+import IPad from '../components/IPad/IPad'
+import IPhone from '../components/IPhone/IPhone'
+import Watch from '../components/Watch/Watch'
+import TV from '../components/TV/TV'
+import Music from '../components/Music/Music'
+import Support from '../components/Support/Support'
 
-
-// import logo from './logo.svg';
 import './App.css';
-
-// const list = [
-//   "shark",
-//   "nado",
-//   "boom!"
-// ]
 
 const VIEWS = {
   HOME: 'HOME',

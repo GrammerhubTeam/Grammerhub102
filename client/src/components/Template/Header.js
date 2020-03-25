@@ -1,8 +1,8 @@
 import React from 'react'
-import AppleIcon from './Company'
-import SearchIcon from './Search'
+import AppleIcon from '../../static/Company'
+import SearchIcon from '../../static/Search'
 import './Template.css'
-import ShoppingBag from './ShoppingBag'
+import ShoppingBag from '../../static/ShoppingBag'
 
 const Header = (props) => {
     return (

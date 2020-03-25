@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from '../../static/logo.svg';
+import '../../Containers/App.css';
 
 const list = [
   "shark",
@@ -11,9 +11,9 @@ const list = [
 const App = () => {
   return (
     <React.Fragment>
-      <div className="App">
+      <div>
         <div>
-            <p>IPHONE ROUTE</p>
+            <p>SUPPORT ROUTE</p>
             <img src={logo} alt="logo" />
             <p>I USED TO BE ABLE TO EAT PIZAA ALOT :(</p>
             <p>

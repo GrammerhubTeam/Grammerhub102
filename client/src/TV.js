@@ -3,23 +3,22 @@ import logo from './logo.svg';
 import './TV.css';
 
 const list = [
-  "shark",
-  "nado",
-  "boom!"
+  "Apple TV+",
+  "Apple TV app",
+  "Apple TV 4K",
+  "Apple TV HD",
+  "AirPlay",
+  "Accessories"
 ]
 
 const TV = () => {
   return (
     <React.Fragment>
       <div className="bannerlinks">
-        <div className="banner-appletvplus"><img src="https://placekitten.com/80/50" alt="Apple TV+" />Apple TV+</div>
-        <div className="banner-appletvapp"><img src="https://placekitten.com/80/50" alt="Apple TV app" />Apple TV app</div>
-        <div className="banner-appletv4k"><img src="https://placekitten.com/80/50" alt="Apple TV 4K" />Apple TV 4K</div>
-        <div className="banner-appletvhd"><img src="https://placekitten.com/80/50" alt="Apple TV HD" />Apple TV HD</div>
-        <div className="banner-airplay"><img src="https://placekitten.com/80/50" alt="Airplay" />Airplay</div>
-        <div className="banner-accessories"><img src="https://placekitten.com/80/50" alt="Accessories" />Accessories</div>
+        {list.map(item => <div className="item-button"><img src="https://placekitten.com/80/50" alt="`{item}`" />{item}</div>)}
       </div>
       <section classname="section-appletvplus">
+        <hr />
         <div classname="scrollingcovers">
           <p><span>apple</span>tv+</p>
           <p>Only Apple Originals.</p>

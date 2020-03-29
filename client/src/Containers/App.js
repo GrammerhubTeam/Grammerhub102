@@ -9,6 +9,7 @@ import Watch from '../components/Watch/Watch'
 import TV from '../components/TV/TV'
 import Music from '../components/Music/Music'
 import Support from '../components/Support/Support'
+import Test from '../components/Test/Test'
 
 import './App.css';
 
@@ -21,10 +22,12 @@ const VIEWS = {
   TV: 'TV',
   MUSIC: 'MUSIC', 
   SUPPORT: 'SUPPORT',
+  TEST: 'TEST',
 }
 
 const App = () => {
-  const [selectedView, setSelectedView] = React.useState(VIEWS.HOME)
+  const [selectedView, setSelectedView] = React.useState(VIEWS.TEST)
+
   const renderView = () => {
     switch (selectedView) {
       case VIEWS.HOME:
@@ -44,7 +47,7 @@ const App = () => {
       case VIEWS.SUPPORT:
         return <Support />
       default:
-        return <Home />
+        return <Test />
     }
   }
 

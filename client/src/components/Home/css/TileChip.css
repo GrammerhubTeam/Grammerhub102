@@ -1,0 +1,31 @@
+.main .tile-chip {
+   -ms-grid-column: 1;
+   grid-column: 1;
+
+   -ms-grid-row: 1;
+   grid-row: 1
+}
+
+.main .tile-chip .tile-image {
+   width: 272px;
+   height: 272px;
+   background-repeat: no-repeat;
+   background-image: url("../img/a12z_bionic__bep2l2cygn1e_large.jpg")
+}
+
+
+@media only screen and (max-width: 1068px) {
+   .main .tile-chip {
+      -ms-grid-column: 2;
+      grid-column: 2;
+
+      -ms-grid-row: 3;
+      grid-row: 3
+   }
+}
+
+@media only screen and (max-width: 734px) {
+   .main .tile-chip {
+      grid-row: auto / span 2
+   }
+}

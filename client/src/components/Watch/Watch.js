@@ -2,12 +2,6 @@ import React from 'react';
 import logo from '../../static/logo.svg';
 import '../../Containers/App.css';
 
-const list = [
-  "shark",
-  "nado",
-  "boom!"
-]
-
 const App = () => {
   return (
     <React.Fragment>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
 
 import Template from '../components/Template/Template'
 import Home from '../components/Home/Home'
@@ -20,7 +21,7 @@ const VIEWS = {
   IPHONE: 'IPHONE',
   WATCH: 'WATCH',
   TV: 'TV',
-  MUSIC: 'MUSIC', 
+  MUSIC: 'MUSIC',
   SUPPORT: 'SUPPORT',
   TEST: 'TEST',
 }
@@ -52,13 +53,27 @@ const App = () => {
   }
 
   return (
-    <React.Fragment>
-      <div className="App">
-        <Template views={VIEWS} setView={setSelectedView}>
-        {renderView()}
-        </Template>
-      </div>
-    </React.Fragment>
+    <BrowserRouter>
+      <React.Fragment>
+        <div className="App">
+          <Template views={VIEWS} setView={setSelectedView}>
+            {renderView()}
+          <Route
+            path="/"
+            render={() => {
+              return <h1>Welcome to Apple</h1>
+            }}
+          />
+          <Route
+            path="/iphone"
+            render={() => {
+              return <h2>Check out our iPhones</h2>
+            }}
+            />
+          </Template>
+        </div>
+      </React.Fragment>
+    </BrowserRouter>
   );
 }
 

@@ -2,17 +2,13 @@ import React from 'react';
 import logo from '../../static/logo.svg';
 import '../../Containers/App.css';
 
-const list = [
-  "shark",
-  "nado",
-  "boom!"
-]
+const visualBorder = {border:'1px solid red'}
 
 const App = () => {
   return (
     <React.Fragment>
       <div className="App">
-        <div>
+        <div style={visualBorder}>
             <p>IPHONE ROUTE</p>
             <img src={logo} alt="logo" />
             <p>I USED TO BE ABLE TO EAT PIZAA ALOT :(</p>

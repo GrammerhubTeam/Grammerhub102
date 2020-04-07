@@ -26,10 +26,34 @@ const data = [
     secondDescription: "With features specifically designed for iPad, iPadOS includes intuitive multitasking, a new Home screen, and desktop-class browsing to make using iPad more powerful, fun, and productive."
   },
   {
-    title: "Grammerhub",
-    description: "Just attach the  grammerrrr",
-    secondTitle: "Apple Pen",
+    title: "Smart Keyboard",
+    description: "Just attach the full-size Smart Keyboard to your iPad and start typing — no charging or pairing required.1 And when you’re finished, it folds up to become a slim, lightweight cover.",
+    secondTitle: "Apple Pencil",
     secondDescription: "Apple Pencil features the precision, responsiveness, and natural fluidity of a traditional writing instrument and the versatility to become so much more.1 With it, you can turn iPad into your notepad, canvas, or just about anything else you can imagine."
+  },
+  {
+    title: "Augmented reality",
+    description: "The large Retina display combined with advanced sensors and cameras makes iPad perfect for immersive AR experiences that enhance the way you play, shop, and learn.",
+    secondTitle: "A10 Fusion chip",
+    secondDescription: "With the A10 Fusion chip, you can edit a 4K video, play graphics-intensive games, and experience AR apps."
+  },
+  {
+    title: "10-hour battery life",
+    description: "The built-in FaceTime HD camera and 8MP back camera allow you to snap amazing photos, shoot epic videos, scan documents, make FaceTime calls, and experience AR.",
+    secondTitle: "Thin, light, and durable design",
+    secondDescription: "iPad is built to be durable so you have peace of mind knowing you can take it anywhere you go. And now the enclosure is made from 100 percent recycled aluminum."
+  },
+  {
+    title: "Front and back cameras",
+    description: "Thanks to the efficiency of the A10 Fusion chip, you can expect up to 10 hours of battery life to keep you going through the day.7",
+    secondTitle: "Over 1 million apps",
+    secondDescription: "There are more than a million iPad apps designed for anything you want to do, like learning, gaming, working, creating, and watching."
+  },
+  {
+    title: "Front and back cameras",
+    description: "Thanks to the efficiency of the A10 Fusion chip, you can expect up to 10 hours of battery life to keep you going through the day.7",
+    secondTitle: "Thin, light, and durable design",
+    secondDescription: "iPad is built to be durable so you have peace of mind knowing you can take it anywhere you go. And now the enclosure is made from 100 percent recycled aluminum."
   }
 ]
 
@@ -42,21 +66,26 @@ const App = () => {
           <label id="ac-ln-curtain" for="ac-ln-menustate"></label>
           <div>
             <div class="hero-intro-copyblock large-9 medium-12">
-              <h2 class="hero-subheadline typography-overview-intro-headline">Like a computer. Unlike any computer.</h2>
+              <h1 class="hero-subheadline typography-overview-intro-headline">Like a computer. Unlike any computer.</h1>
               <p class="typography-overview-intro-copy large-12 large-centered medium-11 small-12">The new iPad combines the power and capability of a computer with the ease of use and versatility you’d never expect from one. And now it’s even more versatile, with a larger 10.2&#x2011;inch Retina display, support for the full-size Smart Keyboard, and the amazing new capabilities of iPadOS. It’s unbelievably fun. And unmistakably iPad.</p>
-              <p class="hero-dynamic-price typography-overview-intro-copy" data-pricing-template="Starting at {price}">&nbsp;</p>
+              <h3 class="hero-dynamic-price typography-overview-intro-copy">Starting at $329</h3>
             </div>
             <div class="hero-cta-links column large-12 large-centered typography-overview-intro-copy">
               <a href="/apple-events/september-2019/" data-analytics-title="watch the keynote" data-analytics-region="learn more" aria-label="Watch the keynote" class="icon-wrapper"><span class="icon-copy">Watch the keynote</span><span class="icon icon-after icon-playcircle"></span></a>
             </div>
             <div class="work-headline-container column large-6 medium-12">
-						  <h2 class="section-headline image-overview-work-headline" data-anim-lazy-image><span class="visuallyhidden">Kick some serious tasks.</span></h2>
+						  <h1 class="section-headline image-overview-work-headline" data-anim-lazy-image><span class="visuallyhidden">Kick some serious tasks.</span></h1>
             </div>
             <div class="work-paragraph-container column large-6 medium-12">
               <div class="typography-overview-body column medium-10 medium-push-1 small-12 small-push-0">
                 <p class="section-paragraph">With iPad, getting work done is all hustle and no hassle. You can easily edit a document while researching something on the web and making a FaceTime call to a colleague at the same time. Manage all your files in one convenient spot with the Files app. And when you want to write a term paper or create a presentation, you can simply use the onscreen keyboard or attach the full&#x2011;size Smart Keyboard.<sup><a href="#footnote-2" class="footnote">1</a></sup></p>
               </div>
 					  </div>
+            <img src="../IPad2.png" alt="logo" />
+            <div class="work-headline-container column large-6 medium-12">
+						  <h1 class="section-headline image-overview-work-headline" data-anim-lazy-image><span class="visuallyhidden">Jot 'til you drop.</span></h1>
+            </div>
+            <img id="ipad3" align="left" src="../IPad3.png" alt="logo"/>
             <div class="notes-paragraph-container column large-12">
               <div class="typography-overview-body column large-6 large-push-5 medium-10 medium-push-1 small-12 small-push-0">
                 <p class="section-paragraph">From taking notes in class to writing out a quick to-do list, using Apple Pencil with iPad is the best way to get what’s in your brain down on the page.<sup><a href="#footnote-2" class="footnote">1</a></sup> Do things like sign paperwork, mark up a document, or sketch out an idea. It feels as natural to use as a pencil, but with so much more capability.</p>
@@ -94,7 +123,7 @@ const App = () => {
 					  </div>
             <div class="row row-logical row-flex">
               <div class="appstore-headline-container column large-6 medium-12">
-                <h2 class="section-headline image-overview-appstore-headline" data-anim-lazy-image><span class="visuallyhidden">Apps for everything.</span></h2>
+                <h1 class="section-headline image-overview-appstore-headline" data-anim-lazy-image><span class="visuallyhidden">Apps for everything.</span></h1>
               </div>
               <div class="appstore-image-container column large-12">
                 <figure class="appstore-hero image-overview-appstore-hero " role="presentation" data-anim-lazy-image>
@@ -125,7 +154,7 @@ const App = () => {
           </div>
           <div class="row row-logical row-flex">
             <div class="accessibility-headline-container column large-8 medium-12">
-              <h2 class="section-headline image-overview-accessibility-headline" data-anim-lazy-image><span class="visuallyhidden">Designed for everyone.</span></h2>
+              <h1 class="section-headline image-overview-accessibility-headline" data-anim-lazy-image><span class="visuallyhidden">Designed for everyone.</span></h1>
             </div>
             <div class="accessibility-image-container column large-4 large-push-1 medium-12 medium-push-0">
               <figure class="accessibility-hero image-overview-accessibility-hero " data-anim-lazy-image>
@@ -140,20 +169,31 @@ const App = () => {
                 <a href="/accessibility/ipad/" data-analytics-title="explore all accessibility features on ipad" data-analytics-region="learn more" aria-label="Explore all accessibility features on iPad" class="icon-wrapper section-paragraph-cta"><span class="icon-copy">Explore all accessibility features on iPad</span><span class="icon icon-after more"></span></a></div>
             </div>
             <div class="section-content">
-              <h2 class="recap-headline large-8 medium-10 small-12 typography-shared-footer-headline-elevated">Did you catch all that? Let’s recap.</h2>
-              <figure class="recap-hero image-overview-recap-hero " data-anim-lazy-image>
-              </figure>
+              <h1 class="recap-headline large-8 medium-10 small-12 typography-shared-footer-headline-elevated">Did you catch all that? Let’s recap.</h1>
+              {/* <figure class="recap-hero image-overview-recap-hero " data-anim-lazy-image> */}
+              <img src="../IPad6.png" alt="logo" />
+              {/* </figure> */}
               <div class="recap-features">
                 {/* {=================================================} */}
                 {
-                  // map takes a function and passes in 2 values: each value in array, and index
-                  data.map((item, index) => (
+                  data.map((item) => (
                     // item and number will be in props in RowLogical component
-                    <RowLogical key={index} item={item} number={5} />
+                    <div class="row row-logical">
+                      <div class="recap-feature column large-6 small-12 feature-smart-keyboard">
+                        <figure class="recap-feature-icon image-overview-recap-smart-keyboard" data-anim-lazy-image></figure>
+                        <h3 class="recap-feature-headline typography-overview-recap-subheadline">{item.title}</h3>
+                        <p class="recap-feature-copy large-10 small-12 typography-overview-recap-body">{item.description}</p>
+                      </div>
+                      <div class="recap-feature column large-6 small-12 feature-apple-pencil">
+                        <figure class="recap-feature-icon image-overview-recap-apple-pencil" data-anim-lazy-image></figure>
+                        <h3 class="recap-feature-headline typography-overview-recap-subheadline">{item.secondTitle}</h3>
+                        <p class="recap-feature-copy large-10 small-12 typography-overview-recap-body">{item.secondDescription}</p>
+                      </div>
+                    </div>
                   ))
                 }
                 {/* {=================================================} */}
-                <div class="row row-logical">
+                {/* <div class="row row-logical">
                   <div class="recap-feature column large-6 small-12 feature-smart-keyboard">
                     <figure class="recap-feature-icon image-overview-recap-smart-keyboard" data-anim-lazy-image></figure>
                     <h3 class="recap-feature-headline typography-overview-recap-subheadline">Smart Keyboard</h3>
@@ -164,9 +204,9 @@ const App = () => {
                     <h3 class="recap-feature-headline typography-overview-recap-subheadline">Apple Pencil</h3>
                     <p class="recap-feature-copy large-10 small-12 typography-overview-recap-body">Apple Pencil features the precision, responsiveness, and natural fluidity of a traditional writing instrument and the versatility to become so much more.<sup><a href="#footnote-2" class="footnote">1</a></sup> With it, you can turn iPad into your notepad, canvas, or just about anything else you can imagine.</p>
                   </div>
-                </div>
+                </div> */}
                  {/* {=================================================} */}
-                <div class="row row-logical">
+                {/* <div class="row row-logical">
                   <div class="recap-feature column large-6 small-12 feature-augmented-reality">
                     <figure class="recap-feature-icon image-overview-recap-augmented-reality" data-anim-lazy-image></figure>
                     <h3 class="recap-feature-headline typography-overview-recap-subheadline">Augmented reality</h3>
@@ -177,9 +217,9 @@ const App = () => {
                     <h3 class="recap-feature-headline typography-overview-recap-subheadline">A10 Fusion chip</h3>
                     <p class="recap-feature-copy large-10 small-12 typography-overview-recap-body">With the A10 Fusion chip, you can edit a 4K video, play graphics-intensive games, and experience AR apps.</p>
                   </div>
-                </div>
+                </div> */}
                  {/* {=================================================} */}
-                <div class="row row-logical">
+                {/* <div class="row row-logical">
                   <div class="recap-feature column large-6 small-12 feature-battery-life">
                     <figure class="recap-feature-icon image-overview-recap-battery-life" data-anim-lazy-image></figure>
                     <h3 class="recap-feature-headline typography-overview-recap-subheadline">10-hour battery life</h3>
@@ -190,9 +230,9 @@ const App = () => {
                     <h3 class="recap-feature-headline typography-overview-recap-subheadline">Over 1 million apps</h3>
                     <p class="recap-feature-copy large-10 small-12 typography-overview-recap-body">There are more than a million iPad apps designed for anything you want to do, like learning, gaming, working, creating, and watching.</p>
                   </div>
-                </div>
+                </div> */}
                  {/* {=================================================} */}
-                <div class="row row-logical">
+                {/* <div class="row row-logical">
                   <div class="recap-feature column large-6 small-12 feature-cameras">
                     <figure class="recap-feature-icon image-overview-recap-cameras" data-anim-lazy-image></figure>
                     <h3 class="recap-feature-headline typography-overview-recap-subheadline">Front and back cameras</h3>
@@ -203,7 +243,7 @@ const App = () => {
                     <h3 class="recap-feature-headline typography-overview-recap-subheadline">Thin, light, and durable design</h3>
                     <p class="recap-feature-copy large-10 small-12 typography-overview-recap-body">iPad is built to be durable so you have peace of mind knowing you can take it anywhere you go. And now the enclosure is made from 100 percent recycled aluminum.</p>
                   </div>
-                </div>
+                </div> */}
                  {/* {=================================================} */}
               </div>
             </div>

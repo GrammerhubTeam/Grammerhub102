@@ -10,7 +10,7 @@ import './css/TileDisplay.css';
 import './css/TilePencil.css';
 import './css/TileLidar.css';
 
-class FeaturesGrid extends Component {
+class FeaturesImages extends Component {
    state = {
       row_span: 1,
       row_span: 2,
@@ -45,4 +45,4 @@ class FeaturesGrid extends Component {
    }
 }
 
-export default FeaturesGrid;
+export default FeaturesImages;

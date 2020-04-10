@@ -1,5 +1,6 @@
 
 import React, { Component } from 'react';
+import TileLabel from './TileLabel';
 
 class FeatureTiles extends Component {
    state = {
@@ -18,12 +19,12 @@ class FeatureTiles extends Component {
    render() {
       return (
          <div>
-            {titles.map(title, index => {
-               <TileLabel className="tile-label"
-                  key={index}>
-                  title={title}
-               </TileLabel>
-            })};
+            <TileLabel className="tile-label">
+               {/* {titles.map(title, index => {
+                  key = { index }
+                  title = { title }
+               })}; */}
+            </TileLabel>
          </div>
       )
    }
